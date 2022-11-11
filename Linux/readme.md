@@ -199,3 +199,5 @@ lynx: Navegador web baseado em modo de texto, ou seja, é um web browser que nos
 netscape: Navegador web da Netscape
 sitecopy: Aplicação que nos permite manter fácil e remotamente web sites
 weblint: Verificador de sintaxes e de estilos html
+
+
