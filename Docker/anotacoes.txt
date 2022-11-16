@@ -1,0 +1,22 @@
+## Instalação Docker - Descomplicando Docker LinuxTips
+# su (e inserir sua senha)
+# curl -fsSL https://get.docker.com/ | bash
+
+## VERSÃO DOCKER
+#docker version 
+
+## Executar um container "hello-World"
+# docker container run -ti hello-world
+
+#Verificar container
+#docker container ls
+#docker container ls -a (trás todos containers) e os detalhes.
+
+#explicação execução container
+#docker container -ti (significa que o docker irá executar um container com terminal e interatividade)
+#docker container -ti ubuntu (instala um container com uma imagem ubuntu)
+#apos isso o terminal abre essa imagem e mostra root@"066041630"
+# exit | sai do container
+# sair do container sem matar ele | ctrl + p + q
+#entrar novamente no container
+#docker container attach +"id do container ou nome"
