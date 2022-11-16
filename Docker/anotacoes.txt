@@ -16,7 +16,23 @@
 #docker container -ti (significa que o docker irá executar um container com terminal e interatividade)
 #docker container -ti ubuntu (instala um container com uma imagem ubuntu)
 #apos isso o terminal abre essa imagem e mostra root@"066041630"
-# exit | sai do container
+# exit | sai do container | matar container
 # sair do container sem matar ele | ctrl + p + q
 #entrar novamente no container
 #docker container attach +"id do container ou nome"
+#docker container -d | executa o container como um daemon não como um -ti terminal de interatividade.
+#executar container
+#docker container -ti "+id container" bash (sem aspas, e o bash no final executa um terminal bash)
+# Qual o comando que eu posso executar para visualizar todos os containers?: # docker container ls -a
+# Qual o comando que eu posso executar para pausar determinado container?: # docker container pause [CONTAINER ID]
+# Como eu posso sair do container sem mata-lo? : CTRL + p + q
+# Qual comando eu utilizo para que seja executado determinado comando dentro do container?: # docker container exec -ti [CONTAINER ID] [COMANDO]
+
+
+
+
+
+
+
+
+
