@@ -69,7 +69,8 @@ final do dia 1
 
 #docker container /opt/giropoops (diretorio especifico)
 é necessário fazer a gestao dos volumes no seu dockerfile
-#docker container run -ti --mount type-bind,src=/opt/giropoops,dst=/giropoops debian (montando uma imagem em diretorio especifico) 
+#docker container run -ti --mount type-bind,src=/opt/giropoops,dst=/giropoops debian (montando uma imagem em diretorio especifico) se colocar ro no final significa READ ONLY
+
 
 
 
