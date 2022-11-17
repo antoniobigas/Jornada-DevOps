@@ -50,6 +50,16 @@
 
 
 
+Qual o comando para listar as imagens que estão no host?
+docker image ls
+docker images
+Qual o nome do arquivo onde adiciono informações sobre a imagem que irei buildar?
+Dockerfile
+Qual o comando utilizado para buildar (construir) uma imagem?
+docker image build
+
+
+
 
 
 
