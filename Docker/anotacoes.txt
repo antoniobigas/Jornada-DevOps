@@ -126,6 +126,9 @@ Qual o diretório no host onde ficam os volumes criados?
 Qual o comando utilizado para ver detalhes sobre um determinado volume?
 docker volume inspect giropops
 
+### docker file
+
+
 
 
 
