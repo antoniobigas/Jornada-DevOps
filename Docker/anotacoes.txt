@@ -75,30 +75,25 @@ final do dia 1
 
 
 
+#criar imagem do postegress
+
+#dentro do diretorio
+#docker container create -v /data --name dados centos
+# docker container run -d -p 5432:5432 --name pgsql1 --volumes--from dbdados -e POSTEGRESQL_USER=docker -e POSTEGRESQL_PASS=docker -e POSTEGRESQL_DB=docker kamui/postgresql
+# docker container run -d -p 5433:5432 --name pgsql2 --volumes--from dbdados -e POSTEGRESQL_USER=docker -e POSTEGRESQL_PASS=docker -e POSTEGRESQL_DB=docker kamui/postgresql
 
 
+Resposta desafio #####
 
+docker volume create dbdados
+docker volume ls
 
+docker container run -d -p 5432:5432 --name pgsql1 --mount type=volume,src=dbdados,dst=/data -e POSTEGRESQL_USER=docker -e POSTEGRESQL_PASS=docker -e POSTEGRESQL_DB=docker kamui/postgresql
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+docker container run -d -p 5433:5432 --name pgsql2 --mount type=volume,src=dbdados,dst=/data -e POSTEGRESQL_USER=docker -e POSTEGRESQL_PASS=docker -e POSTEGRESQL_DB=docker kamui/postgresql
+docker volume ls 
+docker volume inspet dbdados (inspeciona, e acessa diretorio)
+ 
 
 
 
