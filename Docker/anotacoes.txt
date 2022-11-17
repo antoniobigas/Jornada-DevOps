@@ -43,6 +43,13 @@
 # comando top (trás mais informações do container)
 #stress --cpu --vmbytes 128 --vm 1 (simula um estresse na cpu, modifica os bytes, simula 1 vm.)
 
+#docker container rm -f "+idcontainer"
+
+#docker container run -d -m 128M ngnix (cria um container com 128 de memoria)
+#docker container inspect cce (tras as 3 primeiras informações)
+
+
+
 
 
 
