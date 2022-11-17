@@ -21,6 +21,7 @@
 #entrar novamente no container
 #docker container attach +"id do container ou nome"
 #docker container -d | executa o container como um daemon não como um -ti terminal de interatividade.
+
 #executar container
 #docker container -ti "+id container" bash (sem aspas, e o bash no final executa um terminal bash)
 # Qual o comando que eu posso executar para visualizar todos os containers?: # docker container ls -a
@@ -32,6 +33,10 @@
 #docker container restart
 #todos esses comandos acima deve inserir o container ir após o comando. para executar pausar etc
 #docker container inspect "+idcontainer" (sem aspas) ele trás todas informaçoes do container.
+
+
+#
+
 
 
 
