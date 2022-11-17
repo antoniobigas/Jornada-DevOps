@@ -35,7 +35,13 @@
 #docker container inspect "+idcontainer" (sem aspas) ele trás todas informaçoes do container.
 
 
-#
+# CONFIGURANDO CPU E MEMÓRIA  
+
+#docker container stats (verificar quanto de recurso esse container está usando, memoria cpu etc)
+#docker container inspect (inspecionar container, e pegar o ip )
+#curl +IP (abrir a net, abre a pagina web)
+# comando top (trás mais informações do container)
+#stress --cpu --vmbytes 128 --vm 1 (simula um estresse na cpu, modifica os bytes, simula 1 vm.)
 
 
 
