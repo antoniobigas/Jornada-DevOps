@@ -93,7 +93,50 @@ docker container run -d -p 5432:5432 --name pgsql1 --mount type=volume,src=dbdad
 docker container run -d -p 5433:5432 --name pgsql2 --mount type=volume,src=dbdados,dst=/data -e POSTEGRESQL_USER=docker -e POSTEGRESQL_PASS=docker -e POSTEGRESQL_DB=docker kamui/postgresql
 docker volume ls 
 docker volume inspect dbdados (inspeciona, e acessa diretorio)
- 
+#exemplo de backup
+mkdir /opt/backup
+
+subir o container e montar volume
+docker container run -ti --mount type=volume,src=dbdados,dst=/data --mount type=bind,src=/opt/backup,dst=/backup debian tar -cvf  /backup/bkp-banco.tar /data (tar empacota em cvf)
+
+Quando criamos um volume do tipo bind, quais os parâmetros para indicar onde o volume será montado no container?
+dst
+destination
+Quando criamos um volume do tipo volume, quais os parâmetros para indicar o nome do volume que será montado no container?
+source
+src
+É possível montar um volume como somente leitura em um container? SIM
+Qual o parâmetro para montar um volume em um container como somente leitura?
+ro
+Quando o container é removido, o volume também será removido? NAO
+Qual o comando para montar um volume do tipo volume em um container?
+docker container run -d --mount type=volume,source=giropops,destination=/var/opa nginx
+Qual o comando utilizado para criar um volume?
+docker volume create giropops
+Qual o comando para remover um volume?
+docker volume rm giropops
+Qual o comando utilizado para listar todos os volumes?
+docker volume ls
+Qual o comando utilizado para remover todos os volumes que não estão sendo utilizado por nenhum container?
+docker volume prune
+Qual o comando para montar um volume do tipo bind em um container?
+docker container run -ti --mount type=bind,src=/root/primeiro_container,dst=/volume ubuntu
+Qual o diretório no host onde ficam os volumes criados?
+/var/lib/docker/volumes
+Qual o comando utilizado para ver detalhes sobre um determinado volume?
+docker volume inspect giropops
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
