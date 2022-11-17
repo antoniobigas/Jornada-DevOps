@@ -92,7 +92,7 @@ docker container run -d -p 5432:5432 --name pgsql1 --mount type=volume,src=dbdad
 
 docker container run -d -p 5433:5432 --name pgsql2 --mount type=volume,src=dbdados,dst=/data -e POSTEGRESQL_USER=docker -e POSTEGRESQL_PASS=docker -e POSTEGRESQL_DB=docker kamui/postgresql
 docker volume ls 
-docker volume inspet dbdados (inspeciona, e acessa diretorio)
+docker volume inspect dbdados (inspeciona, e acessa diretorio)
  
 
 
