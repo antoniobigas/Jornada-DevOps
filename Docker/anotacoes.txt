@@ -59,6 +59,46 @@ Qual o comando utilizado para buildar (construir) uma imagem?
 docker image build
 
 
+final do dia 1
+
+
+# Inicio dia 2
+
+#montar imagem
+
+
+#docker container /opt/giropoops (diretorio especifico)
+é necessário fazer a gestao dos volumes no seu dockerfile
+#docker container run -ti --mount type-bind,src=/opt/giropoops,dst=/giropoops debian (montando uma imagem em diretorio especifico) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
