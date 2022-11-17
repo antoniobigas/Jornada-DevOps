@@ -27,6 +27,12 @@
 # Qual o comando que eu posso executar para pausar determinado container?: # docker container pause [CONTAINER ID]
 # Como eu posso sair do container sem mata-lo? : CTRL + p + q
 # Qual comando eu utilizo para que seja executado determinado comando dentro do container?: # docker container exec -ti [CONTAINER ID] [COMANDO]
+#docker container stop "+id container" (sem aspas)
+#docker container start 
+#docker container restart
+#todos esses comandos acima deve inserir o container ir após o comando. para executar pausar etc
+#docker container inspect "+idcontainer" (sem aspas) ele trás todas informaçoes do container.
+
 
 
 
