@@ -218,7 +218,7 @@ VOLUME => Permite a criação de um ponto de montagem no container;
 
 WORKDIR => Responsável por mudar do diretório / (raiz) para o especificado nele;
  
-
+DOCKER FILE
 
 
 
@@ -288,6 +288,7 @@ Para seguir com a instalação no Windows caso esteja usando o Git bash:
 /docker-machine-Windows-x86_64.exe > "$HOME/bin/docker-machine.exe"
 # chmod +x "$HOME/bin/docker-machine.exe"
 
+DOCKER MACHINE COMANDOS:
 
 Para verificar se ele foi instalado e qual a sua versão, faça:
 
@@ -339,6 +340,8 @@ Quantos nodes Manager eu preciso ter em meu cluster, para suportar a perda de do
 Qual o comando utilizado para aumentar o número de réplicas de determinado service para 10?
 docker service scale giropops=10
 
+SWARM COMANDOS 
+
 # docker swarm init
 # docker swarm join --token \ SWMTKN-1-100_SEU_TOKEN SEU_IP_MASTER:2377
 # docker node ls
@@ -382,7 +385,18 @@ Armazenar dentro do container informações sensiveis como passwords
 É possível a utilização de secrets sem estar em um cluster swarm?
 Não
 
+Secrets - comandos
 
+echo 'minha secret' | docker secret create 
+docker secret create minha_secret minha_secret.txt
+docker secret inspect minha_secret
+docker secret ls
+docker secret rm minha_secret
+docker service create --name app --detach=false --secret db_pass  minha_app:1.0
+docker service create --detach=false --name app --secret source=db_pass,target=password,uid=2000,gid=3000,mode=0400 minha_app:1.0
+ls -lhart /run/secrets/
+docker service update --secret-rm db_pass --detach=false --secret-add source=db_pass_1,target=password app
+ 
 
 
 
