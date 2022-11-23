@@ -367,6 +367,27 @@ docker service scale giropops=10
 # docker service create --name webserver --network giropops --replicas 5 -p 8080:80 --mount type=volume,src=teste,dst=/app  nginx
 # docker service update <OPCOES> <Nome_Service> 
 
+Qual o comando utilizado para criar um secret?
+docker secret create
+Qual o comando utilizado pra verificar detalhes de um secret?
+docker secret inspect
+Qual o comando utilizado para remover um secret?
+docker secret rm
+Qual o diretório dentro do container onde ficam os arquivos com os secrets?
+/run/secrets/
+Qual o comando utilizado para criar um service utilizando determinado secret?
+docker service create --secret
+Qual a finalidade de um secret?
+Armazenar dentro do container informações sensiveis como passwords
+É possível a utilização de secrets sem estar em um cluster swarm?
+Não
+
+
+
+
+
+
+
 
 
 
