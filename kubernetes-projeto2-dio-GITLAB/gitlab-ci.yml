@@ -16,8 +16,8 @@ build_images:
     - docker login -u $REGISTRY_USER -p $REGISTRY_PASS
 
   script:
-    - docker build -t denilsonbonatti/kubernetes-projeto2-dio:1.0 app/.
-    - docker push denilsonbonatti/kubernetes-projeto2-dio:1.0
+    - docker build -t antoniobigas/kubernetes-projeto2-dio:1.0 app/.
+    - docker push antoniobigas/kubernetes-projeto2-dio:1.0
 
 deploy_gcp:
 
